@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
-    "autoprefixer-stylus": "0.10.0",
+    "autoprefixer": "^6.5.1",
+    "clean-css": "^3.4.20",
     "concurrently": "3.0.0",
-    "react-scripts": "0.6.1",
-    "stylus": "0.54.5"
+    "node-sass": "^3.10.1",
+    "react-scripts": "0.6.1"
   },
   "dependencies": {
     "history": "4.2.0",
@@ -18,11 +19,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "watch": "concurrently --names 'webpack, stylus' --prefix name 'npm run start' 'npm run styles:watch'",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
-    "styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css"
+    "autoprefixer": "autoprefixer",
+    "build-css": "node-sass --include-path scss ./src/css/style.scss ./src/css/style.css",
+    "clean": "cleancss -o ./src/css/style-min.css ./src/css/style.css",
+    "watch": "concurrently --kill-others \"npm run build-css\" \"npm run clean\""
   },
   "eslintConfig": {
     "extends": "./node_modules/react-scripts/config/eslint.js"
