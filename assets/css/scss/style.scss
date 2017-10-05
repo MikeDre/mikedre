@@ -1,0 +1,36 @@
+/**
+ * Settings
+ */
+
+// Vendor
+@import "../../bower_components/uikit/dist/css/uikit.css";
+
+// Project
+@import "settings.breakpoints";
+@import "settings.mixins";
+@import "settings.colours";
+@import "settings.fonts";
+@import "settings.hover";
+@import "settings.fadein";
+@import "settings.global";
+@import "settings.background";
+@import "settings.flex";
+
+/**
+ * Component
+ */
+@import "components.header";
+@import "components.nav";
+@import "components.hero";
+@import "components.footer";
+
+/**
+ * Site
+ */
+@import "site.core";
+
+/**
+ * Trumps
+ */
+@import "trumps.helper";
+@import "trumps.overrides";

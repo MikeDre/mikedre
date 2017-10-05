@@ -1,0 +1,55 @@
+/* External Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
+
+/* Base settings */
+$base-font-size: 14px;
+$base-line-height: 24px;
+
+
+/* Font sizes */
+$font-h1: 38px;
+$font-header: 42px;
+$font-tagline: 28px;
+$font-services: 21px;
+$font-body: 16px;
+$font-footer: 12px;
+
+
+/* Font families */
+$primary-font: 'Montserrat', 'Helvetica', sans-serif;
+$primary-font-bold: 'Montserrat', 'Helvetica', sans-serif;
+$secondary-font: 'Montserrat', 'Helvetica', sans-serif;
+$secondary-font-bold: 'Montserrat', 'Helvetica', sans-serif;
+
+
+/**
+ *  font-size
+ *  @param  {Number} $font-size    Font size we want to convert
+ *  @param  {Number} $line-height  Line height specified in 'PX'
+ *  @return {String} `font-size` and `line-height`
+ */
+ @mixin inuit-font-size($inuit-font-size, $inuit-line-height: auto) {
+     font-size: $inuit-font-size;
+     font-size: ($inuit-font-size / $base-font-size) * 1rem;
+
+     @if $inuit-line-height == auto {
+         line-height: ceil($inuit-font-size / $base-line-height) * ($base-line-height / $inuit-font-size);
+     }
+     @else {
+         @if (type-of($inuit-line-height) == number or $inuit-line-height == inherit or $inuit-line-height == normal) {
+             line-height: $inuit-line-height;
+         }
+         @elseif ($inuit-line-height != none and $inuit-line-height != false) {
+             @warn "D’oh! ‘#{$inuit-line-height}’ is not a valid value for `line-height`.";
+         }
+     }
+ }
+
+@mixin font-size($font-size, $line-height: auto) {
+    @if $line-height != auto {
+        $unitless: $line-height / $font-size;
+        @include inuit-font-size($font-size, $unitless);
+    } @else {
+        @include inuit-font-size($font-size, $line-height);
+    }
+}

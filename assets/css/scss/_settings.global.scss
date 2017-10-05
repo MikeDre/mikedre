@@ -1,0 +1,338 @@
+body,
+html {
+    color: $text-color;
+    font-family: $primary-font;
+    font-smoothing: antialiased;
+    overflow-x: hidden;
+    text-size-adjust: 100%;
+    text-size-adjust: none;
+    width: 100%;
+    background: $background-color;
+}
+
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+p {
+    margin: 0;
+    font-family: $primary-font;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $primary-font;
+}
+
+a:hover,
+a:link,
+a:visited {
+    outline: 0;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 10px 30px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &--white {
+        border: 2px solid $white;
+        color: $white;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        &:hover {
+            background: $black;
+            color: $white;
+        }
+    }
+    &--black {
+        border: 2px solid $black;
+        background: $white;
+        color: $black;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        &:hover {
+            color: $white;
+        }
+    }
+    &__filled {
+        &--white {
+            background: $white;
+            color: $black;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+            &:hover {
+                background: $black;
+                color: $white;
+            }
+        }
+        &--black {
+            background: $black;
+            color: $white;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+}
+
+.color {
+    &--highlight {
+        color: $highlight-color !important;
+    }
+    &--black--slight {
+        color: $black--slight !important;
+    }
+    &--black {
+        color: $black !important;
+    }
+    &--white {
+        color: $white !important;
+    }
+    &--gold {
+        color: $gold !important;
+    }
+    &--orange {
+        color: $orange !important;
+    }
+    &--green {
+        color: $green !important;
+    }
+    &--red {
+        color: $red !important;
+    }
+    &--blue {
+        color: $blue !important;
+    }
+    &--grey--off {
+        color: $grey--off !important;
+    }
+    &--grey--light {
+        color: $grey--light !important;
+    }
+}
+
+.block-center {
+    display: block;
+    margin: 0 auto;
+    &--tablet {
+        @media only screen and (max-width : 768px) {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &--mobile {
+        @media only screen and (max-width : 480px) {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+.text {
+    &-left {
+        text-align: left;
+    }
+    &-right {
+        text-align: right;
+    }
+    &-center {
+        &--tablet {
+            @media only screen and (max-width : 768px) {
+                text-align: center;
+            }
+        }
+        &--mobile {
+            @media only screen and (max-width : 480px) {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.clear {
+    clear: both;
+    width: 100%;
+    height: 0;
+    display: block;
+}
+
+.title {
+    &__indent {
+        &--gold {
+            background: $gold;
+            display: inline-block;
+            height: 2px;
+            margin-right: 15px;
+            position: relative;
+            top: -5px;
+            width: 30px;
+        }
+    }
+}
+
+.divider {
+    &__black {
+        &--full {
+            width: 100%;
+            background: $black;
+            height: 2px;
+        }
+        &--short {
+            width: 50px;
+            background: $black;
+            height: 2px;
+        }
+    }
+    &__grey--light {
+        &--full {
+            width: 100%;
+            background: $grey--light;
+            height: 2px;
+            &--thin {
+                height: 1px;
+            }
+        }
+        &--short {
+            width: 30px;
+            background: $text-color;
+            height: 1px;
+        }
+    }
+    &__grey {
+        &--full {
+            width: 100%;
+            background: $grey;
+            height: 2px;
+            &--thin {
+                height: 1px;
+            }
+        }
+        &--short {
+            width: 50px;
+            background: $grey;
+            height: 2px;
+        }
+    }
+    &__white {
+        &--full {
+            width: 100%;
+            background: $white;
+            height: 2px;
+            &--thin {
+                height: 1px;
+            }
+        }
+        &--short {
+            width: 50px;
+            background: $white;
+            height: 2px;
+        }
+    }
+    &__gold {
+        &--full {
+            width: 100%;
+            background: $gold;
+            height: 2px;
+            &--thin {
+                height: 1px;
+            }
+        }
+        &--short {
+            width: 50px;
+            background: $gold;
+            height: 2px;
+        }
+    }
+    &--header-minus {
+        margin: -10px 0 0 0;
+        position: relative;
+        top: -40px;
+    }
+}
+
+.ease {
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.fadein {
+    &-1 {
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-delay: .5s;
+        animation-timing-function: ease;
+        animation-fill-mode: both;
+    }
+    &-2 {
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-delay: 1.5s;
+        animation-timing-function: ease;
+        animation-fill-mode: both;
+    }
+    &-3 {
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-delay: 2.5s;
+        animation-timing-function: ease;
+        animation-fill-mode: both;
+    }
+    &-4 {
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-delay: 3.5s;
+        animation-timing-function: ease;
+        animation-fill-mode: both;
+    }
+}
+
+.button {
+    &__more {
+        background: $highlight-color;
+        color: $white;
+        display: block;
+        font-family: $secondary-font;
+        font-size: 16px;
+        letter-spacing: 2px;
+        max-width: 200px;
+        padding: 10px 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.float {
+    &--left {
+        float: left;
+    }
+    &--right {
+        float: right;
+    }
+}
+
+@for $i from 0 through 100 {
+    $i: ($i * 5);
+    .rounded--#{$i} {
+        border-radius: #{$i}px !important;
+    }
+}
+
+::selection,
+::-moz-selection,
+p::selection,
+p::-moz-selection {
+  background: $highlight-color;
+  color: #fff;
+}
+
+.shadow {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}

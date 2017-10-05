@@ -1,0 +1,79 @@
+// Backgrounds
+
+
+.background {
+    &--map {
+        background-image: url('/assets/imgs/map-green.jpg');
+    }
+    &--black {
+        background: $black;
+        width: 100%;
+    }
+    &--black-off {
+        background: $black--off;
+        width: 100%;
+    }
+    &--white {
+        background: $white;
+        width: 100%;
+    }
+    &--teal {
+        background: $teal;
+        width: 100%;
+    }
+    &--orange {
+        background: $orange;
+        width: 100%;
+    }
+    &--orange--light {
+        background: $orange--light;
+        width: 100%;
+    }
+    &--grey--dark {
+        background: $grey--dark;
+        width: 100%;
+        color: $white;
+    }
+    &--grey {
+        background: $grey;
+        width: 100%;
+        color: $white;
+    }
+    &--grey--light {
+        background: $grey--light;
+        width: 100%;
+    }
+    &--blue {
+        background: $blue;
+        width: 100%;
+    }
+    &--blue--light {
+        background: $blue--light;
+        width: 100%;
+    }
+    &--blue--logo {
+        background: $blue--logo;
+        width: 100%;
+        h3 {
+            color: $white;
+        }
+    }
+    &--yellow {
+        background: $yellow;
+        width: 100%;
+        color: $white;
+    }
+    &--gold {
+        background: $gold;
+        width: 100%;
+        color: $white;
+    }
+    &--highlight-color {
+        background: $highlight-color;
+        width: 100%;
+        color: $white;
+        h4 {
+            color: $white;
+        }
+    }
+}

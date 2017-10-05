@@ -1,0 +1,35 @@
+.ease {
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.fadein {
+    &-1 {
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-delay: .5s;
+        animation-timing-function: ease;
+        animation-fill-mode: both;
+    }
+    &-2 {
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-delay: 1.5s;
+        animation-timing-function: ease;
+        animation-fill-mode: both;
+    }
+    &-3 {
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-delay: 2.5s;
+        animation-timing-function: ease;
+        animation-fill-mode: both;
+    }
+    &-4 {
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-delay: 3.5s;
+        animation-timing-function: ease;
+        animation-fill-mode: both;
+    }
+}

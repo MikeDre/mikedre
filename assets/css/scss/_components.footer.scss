@@ -1,0 +1,110 @@
+// Footer
+
+.footer {
+    @include media-query('mobile-large') {
+        text-align: center;
+    }
+    .partner {
+        float: right;
+        &__logo {
+            display: inline-block;
+            img {
+                padding: 0 20px;
+                max-width: 170px;
+                max-height: 70px;
+                @include media-query('mobile-large') {
+                    padding: 0 5px;
+                    max-width: 112px;
+                    max-height: 70px;
+                }
+                @include media-query('mobile') {
+                    padding: 0 5px;
+                    max-width: 112px;
+                    max-height: 50px;
+                }
+                @include media-query('mobile-small') {
+                    padding: 0 5px;
+                    max-width: 112px;
+                    max-height: 40px;
+                }
+            }
+        }
+    }
+    &__links {
+        h5 {
+            color: $teal;
+            text-transform: uppercase;
+            font-weight: 400;
+            a {
+                color: $teal;
+            }
+        }
+        a {
+            color: $white;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+            &:hover {
+                color: $highlight-color;
+            }
+        }
+        ul {
+            padding-left: 0px;
+            li {
+                list-style-type: none;
+                a {
+                    @include font-size(12px);
+                }
+            }
+        }
+        &--title {
+            margin-top: 30px;
+            h5 {
+                margin: 0 0 10px 0;
+            }
+        }
+        @include media-query('tablet') {
+            text-align: left;
+        }
+    }
+    &__info {
+        font-size: 12px;
+        line-height: 2;
+        text-align: right;
+
+        .year {
+            color: $white;
+            font-weight: 100;
+        }
+        .site-by {
+            color: $white;
+            font-weight: 100;
+            a {
+                color: $white;
+                font-weight: 400;
+            }
+        }
+    }
+    &__socials {
+        a {
+            i {
+                background: $black--slight;
+                border-radius: 100px;
+                color: $white;
+                font-size: 16px;
+                padding: 8px;
+                text-align: center;
+                width: 16px;
+                transition-duration: 0.3s;
+                transition-timing-function: ease-in-out;
+                &:hover {
+                    background: $highlight-color;
+                }
+            }
+        }
+    }
+    .background--grey--dark {
+        border-top: 15px solid $white;
+        position: relative;
+        z-index: 999;
+    }
+}

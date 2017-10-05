@@ -1,0 +1,39 @@
+///*------------------------------------*\
+//    #SETTINGS-RESPONSIVE
+//\*------------------------------------*/
+
+// Hold our breakpoint aliases and conditions in a list.
+//
+// These can be invoked later on via the `media-query()` mixin found in
+// `_tools.responsive`.
+
+$breakpoints: (
+    // iPhone 6 667px and lower
+    "mobile-small"   "screen and (max-width: 30em)",
+    // iPhone 6 667px and lower
+    "mobile"   "screen and (max-width: 41.6255em)",
+    // iPhone 6 Plus 736px and lower
+    "mobile-large"         "screen and (max-width: 45.9375em)",
+    // iPad 1024px and lower
+    "tablet"       "screen and (max-width: 63.9375em)",
+    // 1024px wide screens and higher
+    "desktop"         "screen and (min-width: 64em)",
+    // 1200px wide screen and higher
+    "desktop-large"   "screen and (min-width: 75em)",
+    // Above 1920px wide (not inclusive)
+    "over-1920"    "screen and (min-width: 120.0625)",
+
+    "small-palm-up"       "screen and (min-width: 41.688em)",
+    "palm-only"           "screen and (min-width: 41.688em) and (max-width: 45.9375em)",
+    "palm-wide"           "screen and (orientation: landscape) and (max-width: 45.9375em)",
+    "device-only"         "screen and (min-width: 46em) and (max-width: 63.9375em)",
+    "device-and-up"       "screen and (min-width: 46em)",
+    "device-and-desk"     "screen and (min-width: 46em) and (max-width: 74.9375em)",
+    "desk-only"           "screen and (min-width: 64em) and (max-width: 74.9375em)",
+    "desk-and-up"         "screen and (min-width: 64em)",
+    "shallow-wide"        "screen and (min-width: 64em) and (max-height: 41.6255em)",
+    "very-shallow-wide"   "screen and (min-width: 64em) and (max-height: 33.6255em)",
+    "large-desk-only"     "screen and (min-width: 75em) and (max-width: 120em)",
+    "large-desk-and-up"   "screen and (min-width: 75em)",
+    "retina-only"         "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)"
+)

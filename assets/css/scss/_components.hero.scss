@@ -1,0 +1,147 @@
+// Hero
+
+.hero {
+    overflow: hidden;
+    position: relative;
+    &__wrap {
+        z-index: 10;
+        margin: 0 auto;
+        &--bottom {
+            margin: 0 auto 100px auto;
+            @include media-query('tablet') {
+                margin: 0 auto;
+            }
+        }
+    }
+    &__title {
+        h2 {
+            color: $white;
+            font-weight: 300;
+            margin: 0 0 10px 0;
+            @include media-query('tablet') {
+                @include font-size(18px);
+            }
+        }
+    }
+    &__sub-title {
+        h2 {
+            color: $white;
+            font-weight: 700;
+            @include media-query('tablet') {
+                @include font-size(18px);
+            }
+        }
+        &--mobile {
+            margin: 0;
+        }
+    }
+    &__caption {
+        p {
+            color: $white;
+            display: block;
+            max-width: 650px;
+            @include font-size(18px);
+        }
+    }
+    &__cta {
+        a {
+            border: 1px solid $white;
+            color: $white;
+            display: block;
+            margin: 0 auto;
+            max-width: 150px;
+            padding: 10px;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+            @include media-query('tablet') {
+                @include font-size(12px);
+                padding: 5px;
+            }
+            &:hover {
+                background: $white;
+                color: $black--slight;
+            }
+        }
+    }
+    &__overlay {
+        background: rgba($black, 0.4);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &--home {
+        background-color: $grey--off;
+        background-position: 0 0;
+        color: $white;
+        text-align: center;
+        min-height: 700px;
+        // display: -ms-flexbox;
+        // display: -webkit-flex;
+        // display: flex;
+        // -ms-flex-align: center;
+        // -webkit-align-items: center;
+        // -webkit-box-align: center;
+        // align-items: center;
+        @include media-query('tablet') {
+            min-height: 100vw;
+        }
+    }
+    &--l1 {
+        background-color: $grey--off;
+        color: $white;
+        text-align: center;
+        min-height: 400px;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+    &--l2 {
+        background-color: $grey--off;
+        color: $white;
+        text-align: center;
+        min-height: 700px;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        align-items: center;
+        @include media-query('tablet') {
+            min-height: 50vw;
+        }
+    }
+    &--small {
+        background-color: $grey--off;
+        // background-position: 0 0;
+        color: $white;
+        text-align: center;
+        min-height: 400px;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        align-items: center;
+        @include media-query('tablet') {
+            min-height: 50vw;
+        }
+        .hero__title {
+            h2 {
+                @include media-query('tablet') {
+                    @include font-size(20px);
+                }
+                @include media-query('mobile-large') {
+                    @include font-size(18px);
+                }
+            }
+        }
+    }
+}
