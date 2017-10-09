@@ -2,9 +2,6 @@
 
 
 .background {
-    &--map {
-        background-image: url('/assets/imgs/map-green.jpg');
-    }
     &--black {
         background: $black;
         width: 100%;
@@ -12,6 +9,13 @@
     &--black-off {
         background: $black--off;
         width: 100%;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            color: $white;
+        }
     }
     &--white {
         background: $white;
@@ -50,23 +54,6 @@
     &--blue--light {
         background: $blue--light;
         width: 100%;
-    }
-    &--blue--logo {
-        background: $blue--logo;
-        width: 100%;
-        h3 {
-            color: $white;
-        }
-    }
-    &--yellow {
-        background: $yellow;
-        width: 100%;
-        color: $white;
-    }
-    &--gold {
-        background: $gold;
-        width: 100%;
-        color: $white;
     }
     &--highlight-color {
         background: $highlight-color;

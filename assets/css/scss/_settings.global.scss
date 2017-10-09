@@ -96,20 +96,20 @@ a:visited {
     &--white {
         color: $white !important;
     }
-    &--gold {
-        color: $gold !important;
-    }
     &--orange {
         color: $orange !important;
     }
-    &--green {
-        color: $green !important;
+    &--blue {
+        color: $blue !important;
+    }
+    &--teal {
+        color: $teal !important;
     }
     &--red {
         color: $red !important;
     }
-    &--blue {
-        color: $blue !important;
+    &--pink {
+        color: $pink !important;
     }
     &--grey--off {
         color: $grey--off !important;
@@ -162,20 +162,6 @@ a:visited {
     width: 100%;
     height: 0;
     display: block;
-}
-
-.title {
-    &__indent {
-        &--gold {
-            background: $gold;
-            display: inline-block;
-            height: 2px;
-            margin-right: 15px;
-            position: relative;
-            top: -5px;
-            width: 30px;
-        }
-    }
 }
 
 .divider {
@@ -236,21 +222,6 @@ a:visited {
             height: 2px;
         }
     }
-    &__gold {
-        &--full {
-            width: 100%;
-            background: $gold;
-            height: 2px;
-            &--thin {
-                height: 1px;
-            }
-        }
-        &--short {
-            width: 50px;
-            background: $gold;
-            height: 2px;
-        }
-    }
     &--header-minus {
         margin: -10px 0 0 0;
         position: relative;
@@ -261,52 +232,6 @@ a:visited {
 .ease {
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
-}
-
-.fadein {
-    &-1 {
-        animation-name: fadeIn;
-        animation-duration: 2s;
-        animation-delay: .5s;
-        animation-timing-function: ease;
-        animation-fill-mode: both;
-    }
-    &-2 {
-        animation-name: fadeIn;
-        animation-duration: 2s;
-        animation-delay: 1.5s;
-        animation-timing-function: ease;
-        animation-fill-mode: both;
-    }
-    &-3 {
-        animation-name: fadeIn;
-        animation-duration: 2s;
-        animation-delay: 2.5s;
-        animation-timing-function: ease;
-        animation-fill-mode: both;
-    }
-    &-4 {
-        animation-name: fadeIn;
-        animation-duration: 2s;
-        animation-delay: 3.5s;
-        animation-timing-function: ease;
-        animation-fill-mode: both;
-    }
-}
-
-.button {
-    &__more {
-        background: $highlight-color;
-        color: $white;
-        display: block;
-        font-family: $secondary-font;
-        font-size: 16px;
-        letter-spacing: 2px;
-        max-width: 200px;
-        padding: 10px 20px;
-        text-align: center;
-        text-transform: uppercase;
-    }
 }
 
 .float {
@@ -331,8 +256,4 @@ p::selection,
 p::-moz-selection {
   background: $highlight-color;
   color: #fff;
-}
-
-.shadow {
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }

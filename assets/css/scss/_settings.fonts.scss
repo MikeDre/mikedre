@@ -1,10 +1,6 @@
-/* External Fonts */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
-
 /* Base settings */
 $base-font-size: 14px;
 $base-line-height: 24px;
-
 
 /* Font sizes */
 $font-h1: 38px;
@@ -14,13 +10,32 @@ $font-services: 21px;
 $font-body: 16px;
 $font-footer: 12px;
 
-
 /* Font families */
-$primary-font: 'Montserrat', 'Helvetica', sans-serif;
-$primary-font-bold: 'Montserrat', 'Helvetica', sans-serif;
-$secondary-font: 'Montserrat', 'Helvetica', sans-serif;
-$secondary-font-bold: 'Montserrat', 'Helvetica', sans-serif;
+$primary-font: 'Circular Book', sans-serif;
+$primary-font-bold: 'Circular', sans-serif;
+$secondary-font: '', sans-serif;
+$secondary-font-bold: '', sans-serif;
 
+/* Custom Fonts */
+@font-face {
+    font-family: 'Circular';
+    src: url('../fonts/Circular-Medium.eot');
+    src: url('../fonts/Circular-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circular-Medium.woff') format('woff'),
+        url('../fonts/Circular-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Book';
+    src: url('../fonts/Circular-Book.eot');
+    src: url('../fonts/Circular-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circular-Book.woff') format('woff'),
+        url('../fonts/Circular-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /**
  *  font-size

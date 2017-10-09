@@ -1,0 +1,13 @@
+// Case Studies
+
+.case-studies {
+    &__title {
+        &-background {
+            position: relative;
+            top: -75px;
+            display: block;
+            font-size: 65px;
+            opacity: 0.05;
+        }
+    }
+}

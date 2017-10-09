@@ -1,71 +1,11 @@
 // Header
 
 .header {
-    &__phone {
-        &-number {
-            text-align: right;
-            padding: 20px 0;
-            a {
-                color: $highlight-color;
-            }
-            @include font-size(22px);
-            @include media-query('mobile-large') {
-                padding: 0;
-                @include font-size(14px);
-            }
-            @include media-query('tablet') {
-                margin-right: 50px;
-            }
-        }
-    }
-    &__text {
-        &-controls {
-            float: right;
-            &--small {
-                font-size: ($font-body - 4);
-                cursor: pointer;
-            }
-            &--normal {
-                font-size: $font-body;
-                cursor: pointer;
-            }
-            &--large {
-                font-size: ($font-body + 4);
-                cursor: pointer;
-            }
-        }
-    }
-    &__socials {
-        a {
-            i {
-                background: $grey--dark;
-                border-radius: 100px;
-                color: $white;
-                font-size: 16px;
-                padding: 8px;
-                text-align: center;
-                width: 16px;
-                transition-duration: 0.3s;
-                transition-timing-function: ease-in-out;
-                &:hover {
-                    background: $highlight-color;
-                }
-            }
-        }
-    }
-    &__search {
-        input {
-            background: $grey--light;
-            border: 0px solid;
-            max-width: 100%;
-            padding: 10px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-        &--side {
-            color: $grey--dark;
-            .uk-search-icon {
-                color: $grey--dark !important;
+    .logo {
+        &--main {
+            img {
+                position: relative;
+                z-index: 10;
             }
         }
     }
