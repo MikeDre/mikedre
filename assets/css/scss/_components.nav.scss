@@ -21,17 +21,6 @@
                     @include media-query('tablet') {
                         @include font-size(12px);
                     }
-                    @media screen and (max-width: 1330px) {
-                        @include font-size(13px);
-                        padding: 0 0 0 30px;
-                    }
-                    @media screen and (max-width: 1250px) {
-                        @include font-size(12px);
-                        padding: 0 0 0 30px;
-                    }
-                    @media screen and (min-width: 1330px) {
-                        @include font-size(14px);
-                    }
                 }
             }
         }

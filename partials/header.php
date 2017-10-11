@@ -27,3 +27,31 @@
     </head>
 
     <body>
+        <div class="demo-mohe" style="display:none">
+            <main>
+                <section class="content">
+                    <nav class="menu menu--mohe">
+                        <a class="menu__item" href="/">
+                            <span class="menu__item-name">Home</span>
+                            <span class="menu__item-label">Explore the portfolios</span>
+                        </a>
+                        <a class="menu__item" href="/branding">
+                            <span class="menu__item-name">Branding</span>
+                            <span class="menu__item-label">Discover fascinating stories</span>
+                        </a>
+                        <a class="menu__item" href="#">
+                            <span class="menu__item-name">Schedule</span>
+                            <span class="menu__item-label">View our event calendar</span>
+                        </a>
+                        <a class="menu__item" href="#">
+                            <span class="menu__item-name">Mission</span>
+                            <span class="menu__item-label">Read our mission statement</span>
+                        </a>
+                        <a class="menu__item" href="#">
+                            <span class="menu__item-name">Contact</span>
+                            <span class="menu__item-label">Get in touch and find us</span>
+                        </a>
+                    </nav>
+                </section>
+            </main>
+        </div>

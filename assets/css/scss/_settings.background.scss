@@ -51,6 +51,17 @@
         background: $blue;
         width: 100%;
     }
+    &--red {
+        background: $red;
+        width: 100%;
+    }
+    &--pink {
+        background: $pink;
+        width: 100%;
+        .hero__slide--3 {
+            background-color: $pink;
+        }
+    }
     &--blue--light {
         background: $blue--light;
         width: 100%;

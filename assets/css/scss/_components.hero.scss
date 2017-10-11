@@ -38,6 +38,12 @@
             padding-top: 10px;
             text-transform: uppercase;
         }
+        &--page {
+            min-height: 0vh;
+        }
+        .hero__title {
+            margin: 0 auto;
+        }
     }
     &__slide {
         &--1 {
@@ -69,6 +75,13 @@
             transform: rotate(3deg);
             width: 2000px;
             z-index: 1;
+        }
+    }
+    &--page {
+        .logo--main {
+            @include media-query('tablet') {
+                margin-bottom: 50px;
+            }
         }
     }
 }

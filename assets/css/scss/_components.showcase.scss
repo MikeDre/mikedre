@@ -1,0 +1,114 @@
+// Showcase
+
+.showcase {
+    &__img {
+        img {
+            border: 10px solid rgba($grey, 0.1);
+        }
+    }
+    &__project {
+        &-title {
+            h3 {
+                font-size: 40px;
+                font-family: $primary-font-bold;
+            }
+        }
+        &-caption {
+            display: block;
+            font-size: 14px;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+        }
+        &-description {
+            p {
+                color: rgba($grey, 0.75);
+            }
+        }
+        &-button {
+            background-color: $grey;
+            border-radius: 250px;
+            box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+            float: right;
+            height: 50px;
+            margin: -24px 30px 0px 0;
+            transition-duration: 0.2s;
+            transition-timing-function: cubic-bezier(0.49, -0.87, 0.55, 1.71);
+            transform: scale(1);
+            width: 50px;
+            @include media-query('mobile-large') {
+                float: initial;
+                margin: -24px auto;
+                position: relative;
+                top: 22px;
+            }
+            &-ellipsis {
+                background-color: $white;
+                border-radius: 250px;
+                height: 6px;
+                margin: 2px;
+                position: relative;
+                top: 0px;
+                transition-duration: 0.2s;
+                transition-timing-function: cubic-bezier(0.49, -0.87, 0.55, 1.71);
+                width: 6px;
+            }
+            &--pink {
+                background-color: $pink;
+            }
+            &--red {
+                background-color: $red;
+            }
+            &--teal {
+                background-color: $teal;
+            }
+            &--orange {
+                background-color: $orange;
+            }
+            &:hover {
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19);
+                transform: scale(1.1);
+                .showcase__project-button-ellipsis {
+                    &:first-child {
+                        animation: bounce 0.3s ease-in-out 1;
+                    }
+                    &:nth-child(2) {
+                        animation: bounce 0.4s ease-in-out 1;
+                    }
+                    &:last-child {
+                        animation: bounce 0.5s ease-in-out 1;
+                    }
+                }
+            }
+        }
+        &-cta {
+            &--red {
+                border-top: 2px solid $red;
+            }
+            &--pink {
+                border-top: 2px solid $pink;
+            }
+            &--teal {
+                border-top: 2px solid $teal;
+            }
+            &--orange {
+                border-top: 2px solid $orange;
+            }
+        }
+        &-icon {
+            display: block;
+            opacity: 0.25;
+        }
+    }
+}
+
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -2px;
+  }
+  100% {
+    top: 0;
+  }
+}
