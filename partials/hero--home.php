@@ -16,12 +16,12 @@
             </div>
         </div>
         <div class="hero__wrap uk-flex uk-flex-middle">
-            <div class="hero__title">
+            <div class="hero__title uk-text-center">
                 <h1>
                     <span class="hero__title--designer">Designer<span class="color--red">.</span></span>
                     <span class="hero__title--web-dev">Frontend Web Developer<span class="color--orange">.</span></span>
                 </h1>
-                <h3>Controlling pixels since <span class="color--pink">&lsquo;</span>09</h3>
+                <h3>Controlling pixels <br class="uk-hidden@m">since <span class="color--pink">&lsquo;</span>09</h3>
             </div>
         </div>
     </div>

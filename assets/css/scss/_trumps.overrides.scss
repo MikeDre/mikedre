@@ -1,8 +1,49 @@
 .showcase__adjustment {
-    margin-bottom: -90px;
 }
 
 html.scroll-lock, body.scroll-lock {
     height: 100%;
     overflow: hidden
+}
+
+.uk-tooltip {
+    background: $black--slight;
+    &-inner {
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+.uk-label {
+    &--blue { background-color: $teal;}
+    &--teal { background-color: $teal;}
+    &--pink { background-color: $pink;}
+    &--red { background-color: $red;}
+    &--orange { background-color: $orange;}
+}
+
+ul.uk-subnav.uk-subnav-pill {
+    border-bottom: 1px dotted #e8e8e8;
+    li {
+        a {
+            text-transform: inherit;
+            font-size: 18px;
+        }
+    }
+}
+
+.render {
+    max-width: 100vw;
+    overflow-x: initial;
+    @include media-query('mobile-large') {
+        overflow-x: hidden;
+    }
+}
+
+.typeform-widget {
+    width: 100%; 
+    height: 500px; 
+    position:relative;
+    z-index: 4;
 }

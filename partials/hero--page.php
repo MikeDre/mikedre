@@ -18,9 +18,14 @@
         <div class="hero__wrap hero__wrap--page uk-flex uk-flex-middle">
             <div class="hero__title uk-text-center">
                 <h1>
-                    <span class="hero__title--designer color--white">Branding<span class="color--orange">.</span></span>
+                    <span class="hero__title--designer color--white">Design<span class="color--orange">.</span></span>
                 </h1>
-                <h3 class="color--white">Logos<span class="color--orange">.</span></h3>
+                <h3 class="color--white">
+                    Logo Design<span class="color--orange">.</span> /
+                    UI Design<span class="color--orange">.</span> /
+                    UX Design<span class="color--orange">.</span> /
+                    Illustration<span class="color--orange">.</span>
+                </h3>
             </div>
         </div>
     </div>

@@ -22,15 +22,26 @@
     }
     &__client {
         img {
-            padding: 20px;
             transition-duration: 0.3s;
             transition-timing-function: cubic-bezier(0.49, -0.87, 0.55, 1.71);
             transform: scale(1);
-             filter: grayscale(100%);
             &:hover {
                 transform: scale(1.1);
-                filter: grayscale(0%);
             }
+        }
+    }
+    &__clients {
+        &:hover .logo img {
+            opacity: 0.5;
+            filter: grayscale(100%);
+            filter: blur(1px);
+            transition-duration: 0.3s;
+            transition-timing-function: cubic-bezier(0.49, -0.87, 0.55, 1.71);
+        }
+        .logo img:hover {
+          opacity: 1.0 !important;
+          filter: grayscale(0%);
+          filter: blur(0px);
         }
     }
 }

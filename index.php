@@ -1,17 +1,17 @@
-<? include ( './partials/header.php' ) ?>
+    <? include ( './partials/header.php' ) ?>
 
-    <? include ( './partials/hero--home.php' ) ?>
+        <? include ( './partials/hero--home.php' ) ?>
 
-    <section class="uk-container margin-t-200">
-        <? include ( './partials/case-studies.php' ) ?>
-    </section>
+        <section class="uk-container margin-t-200">
+            <? include ( './partials/case-studies.php' ) ?>
+        </section>
 
-    <section class="background--grey--light margin-t-100">
-        <div class="padding-t-150 padding-b-200 showcase__adjustment">
-            <div class="uk-container uk-container-small">
-                <? include ( './partials/showcase.php' ) ?>
+        <section class="background--grey--light margin-t-100">
+            <div class="padding-t-150 padding-b-100">
+                <div class="uk-container">
+                    <? include ( './partials/showcase.php' ) ?>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-<? include ( './partials/footer.php' ) ?>
+    <? include ( './partials/footer.php' ) ?>

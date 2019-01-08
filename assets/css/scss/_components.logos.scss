@@ -4,15 +4,23 @@
 }
 
 .logo {
+    position: relative;
+    z-index: 4;
+    margin-bottom: 70px;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.49, -0.87, 0.55, 1.71);
+    transform: scale(1);
     img {
         max-width: 180px;
         max-height: 100px;
         transition-duration: 0.3s;
         transition-timing-function: cubic-bezier(0.49, -0.87, 0.55, 1.71);
         transform: scale(1);
+        &:hover {
+            transform: scale(1.1);
+        }
     }
-    margin-bottom: 70px;
-    transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(0.49, -0.87, 0.55, 1.71);
-    transform: scale(1);
+    &__wrap {
+
+    }
 }

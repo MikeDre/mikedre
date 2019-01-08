@@ -24,6 +24,9 @@
     &--teal {
         background: $teal;
         width: 100%;
+        .hero__slide--3 {
+            background-color: $teal;
+        }
     }
     &--orange {
         background: $orange;
@@ -50,6 +53,10 @@
     &--blue {
         background: $blue;
         width: 100%;
+        .hero__slide--3 {
+            background-color: $blue;
+            z-index: 5;
+        }
     }
     &--red {
         background: $red;

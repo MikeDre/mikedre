@@ -1,9 +1,12 @@
+html {
+    overflow-x: hidden;
+}
+
 body,
 html {
     color: $text-color;
     font-family: $primary-font;
     font-smoothing: antialiased;
-    overflow-x: hidden;
     text-size-adjust: 100%;
     text-size-adjust: none;
     width: 100%;

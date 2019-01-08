@@ -15,7 +15,7 @@
         <meta name="twitter:url" content="http://www.twitter.com/mikedre_designs"/>
         <meta name="twitter:title" content="MikeDre Designs - Designer &amp; Front-End Web Developer">
 
-        <link href="./build/css/site.styles.min.css" type="text/css" rel="stylesheet">
+        <link href="./build/css/site.styles.min.css?v=2" type="text/css" rel="stylesheet">
         <script src="https://use.fontawesome.com/2b28deec72.js"></script>
 
         <link rel="icon" type="image/x-icon" href="./build/imgs/favicon.ico">
@@ -33,23 +33,23 @@
                     <nav class="menu menu--mohe">
                         <a class="menu__item" href="/">
                             <span class="menu__item-name">Home</span>
-                            <span class="menu__item-label">Explore the portfolios</span>
+                            <span class="menu__item-label">Back to the start</span>
                         </a>
-                        <a class="menu__item" href="/branding">
-                            <span class="menu__item-name">Branding</span>
-                            <span class="menu__item-label">Discover fascinating stories</span>
+                        <a class="menu__item" href="/design">
+                            <span class="menu__item-name">Design</span>
+                            <span class="menu__item-label">Logos / UX Design / Illustration</span>
                         </a>
-                        <a class="menu__item" href="#">
-                            <span class="menu__item-name">Schedule</span>
-                            <span class="menu__item-label">View our event calendar</span>
-                        </a>
-                        <a class="menu__item" href="#">
-                            <span class="menu__item-name">Mission</span>
-                            <span class="menu__item-label">Read our mission statement</span>
-                        </a>
-                        <a class="menu__item" href="#">
+                        <span class="menu__item">
+                            <span class="menu__item-name">Development</span>
+                            <span class="menu__item-label">Mobile &amp; Web Development (Coming soon)</span>
+                        </span>
+                        <a class="menu__item uk-visible@s" href="/contact">
                             <span class="menu__item-name">Contact</span>
-                            <span class="menu__item-label">Get in touch and find us</span>
+                            <span class="menu__item-label">Get in touch</span>
+                        </a>
+                        <a class="menu__item uk-hidden@s" href="https://mikedredesigns.typeform.com/to/f04xt2" target="_blank">
+                            <span class="menu__item-name">Contact</span>
+                            <span class="menu__item-label">Get in touch</span>
                         </a>
                     </nav>
                 </section>

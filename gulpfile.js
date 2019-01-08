@@ -28,7 +28,6 @@ gulp.task('scripts', function() {
     .pipe(concat('all.min.js'))
     .pipe(sourcemaps.write('../maps'))
     .pipe(gulp.dest('build/js'))
-    // .pipe(livereload());
 });
 gulp.task('vendorscripts', function() {
     return gulp.src([
